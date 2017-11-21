@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src= "js/main.js">
+    </script>
+  </head>
+  <body>
+    <div id="signpost1">
+      <p class= "mouseOver" id="firstPage">Click to begin</p>
+      <p id="reset"><a href="file:///Users/tech-a10/Documents/engineering/project1/sparta-project1-jsgame/index.html">Reset</a></p>
+      <p class= "mouseOver" id="undo">Undo</p>
+    </div>
+    <div id="signpost2">
+      <p class="changeSign"><a href="index.html">Back to game</a></p>
+    </div>
+    <div class= "container instructions">
+      <h1>Mastermind</h1>
+      <div class="backboard">
+        <p class="rules">
+          To start each round click the 'Click to Begin' button. The computer picks a sequence of four colors, duplicates allowed.
+          The objective of the game is to guess the exact positions of the colors in the computer's sequence. More than one colour can be picked.
+          After filling a line with your guesses and clicking on the 'Check' button, the computer responses with the result of your guess.
+          <br><br>
+          For each color in your guess that is in the correct color and correct position in the code sequence, the computer displays a small red color on the left side of the current guess.
+          For each color in your guess that is in the correct color but is NOT in the correct position in the code sequence, the computer display a small white color on the left side of the current guess.
+          <br><br>
+          You win the game when you manage to guess all the colors in the code sequence and when they all in the right position.
+          You lose the game if you use all attempts without guessing the computer code sequence.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

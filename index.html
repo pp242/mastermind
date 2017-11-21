@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src= "js/main.js">
+    </script>
+  </head>
+  <body>
+    <div id="signpost1">
+      <p class= "mouseOver" id="firstPage">Click to begin</p>
+      <p id="reset"><a href="file:///Users/tech-a10/Documents/engineering/project1/sparta-project1-jsgame/index.html">Reset</a></p>
+      <p class= "mouseOver" id="undo">Undo</p>
+    </div>
+    <div id="signpost2">
+      <p class="changeSign"><a href="instructions.html">Instructions</a></p>
+    </div>
+    <div class= "container">
+      <h1>Mastermind</h1>
+        <div class="gridBackground">
+        <div class="row">
+          <div class="col-md-12">
+            <table>
+              <thead>
+                <tr>
+                  <td class= "compGuess" value="0"></td>
+                  <td class= "mouseOver" id= "score1" value="0">Click to score</td>
+                    <td class= "compGuess0" value="1">X</td>
+                    <td class= "compGuess1" value="2">X</td>
+                    <td class= "compGuess2" value="3">X</td>
+                    <td class= "compGuess3" value="4">X</td>
+                </tr
+              </thead>
+              <tbody>
+                <tr id="one">
+                  <td class="turn" value="5">1</td>
+                  <td class="pinScore" value="6">
+                    <div class="left">
+                      <p class="pin1">&#x25EF;</p>
+                      <p class="pin2">&#x25EF;</p>
+                    </div>
+                    <div class="right">
+                      <p class="pin3">&#x25EF;</p>
+                      <p class="pin4">&#x25EF;</p>
+                    </div>
+                  </td>
+                  <td class="grid" value="7"></td>
+                  <td class="grid" value="8"></td>
+                  <td class="grid" value="9"></td>
+                  <td class="grid" value="10"></td>
+                </tr>
+                <tr value="two">
+                  <td class="turn" value="11">2</td>
+                  <td class="pinScore" value="12">
+                    <div class="left">
+                      <p class="pin5">&#x25EF;</p>
+                      <p class="pin6">&#x25EF;</p>
+                    </div>
+                    <div class="right">
+                      <p class="pin7">&#x25EF;</p>
+                      <p class="pin8">&#x25EF;</p>
+                    </div>
+                  </td>
+                  <td class="grid" value="13"></td>
+                  <td class="grid" value="14"></td>
+                  <td class="grid" value="15"></td>
+                  <td class="grid" value="16"></td>
+                </tr>
+                <tr value="three">
+                  <td class="turn" value="17">3</td>
+                  <td class="pinScore" value="18">
+                    <div class="left">
+                      <p class="pin9">&#x25EF;</p>
+                      <p class="pin10">&#x25EF;</p>
+                    </div>
+                    <div class="right">
+                      <p class="pin11">&#x25EF;</p>
+                      <p class="pin12">&#x25EF;</p>
+                    </div>
+                  </td>
+                  <td class="grid" value="19"></td>
+                  <td class="grid" value="20"></td>
+                  <td class="grid" value="21"></td>
+                  <td class="grid" value="22"></td>
+                </tr>
+                <tr value="four">
+                  <td class="turn" value="23">4</td>
+                  <td class="pinScore" value="24">
+                    <div class="left">
+                      <p class="pin13">&#x25EF;</p>
+                      <p class="pin14">&#x25EF;</p>
+                    </div>
+                    <div class="right">
+                      <p class="pin15">&#x25EF;</p>
+                      <p class="pin16">&#x25EF;</p>
+                    </div>
+                  </td>
+                  <td class="grid" value="25"></td>
+                  <td class="grid" value="26"></td>
+                  <td class="grid" value="27"></td>
+                  <td class="grid" value="28"></td>
+                </tr>
+                <tr value="five">
+                  <td class="turn" value="29">5</td>
+                  <td class="pinScore" value="30">
+                    <div class="left">
+                      <p class="pin17">&#x25EF;</p>
+                      <p class="pin18">&#x25EF;</p>
+                    </div>
+                    <div class="right">
+                      <p class="pin19">&#x25EF;</p>
+                      <p class="pin20">&#x25EF;</p>
+                    </div>
+                  </td>
+                  <td class="grid" value="31"></td>
+                  <td class="grid" value="32"></td>
+                  <td class="grid" value="33"></td>
+                  <td class="grid" value="34"></td>
+                </tr>
+                <tr value="six">
+                  <td class="turn" value="35">6</td>
+                  <td class="pinScore" value="36">
+                    <div class="left">
+                      <p class="pin21">&#x25EF;</p>
+                      <p class="pin22">&#x25EF;</p>
+                    </div>
+                    <div class="right">
+                      <p class="pin23">&#x25EF;</p>
+                      <p class="pin24">&#x25EF;</p>
+                    </div>
+                  </td>
+                  <td class="grid" value="37"></td>
+                  <td class="grid" value="38"></td>
+                  <td class="grid" value="39"></td>
+                  <td class="grid" value="40"></td>
+                </tr>
+                <tr value="seven">
+                  <td class="turn" value="41">7</td>
+                  <td class="pinScore" value="42">
+                    <div class="left">
+                      <p class="pin25">&#x25EF;</p>
+                      <p class="pin26">&#x25EF;</p>
+                  </div>
+                  <div class="right">
+                    <p class="pin27">&#x25EF;</p>
+                    <p class="pin28">&#x25EF;</p>
+                  <div class="left">
+                  </td>
+                  <td class="grid" value="43"></td>
+                  <td class="grid" value="44"></td>
+                  <td class="grid" value="45"></td>
+                  <td class="grid" value="46"></td>
+                </tr>
+                <tr value="eight">
+                  <td class="turn" value="47">8</td>
+                  <td class="pinScore" value="48">
+                    <div class="left">
+                      <p class="pin29">&#x25EF;</p>
+                      <p class="pin30">&#x25EF;</p>
+                    </div>
+                    <div class="right">
+                      <p class="pin31">&#x25EF;</p>
+                      <p class="pin32">&#x25EF;</p>
+                    </div>
+                  </td>
+                  <td class="grid" value="49"></td>
+                  <td class="grid" value="50"></td>
+                  <td class="grid" value="51"></td>
+                  <td class="grid" value="52"></td>
+                </tr>
+                <tr value="nine">
+                  <td class="turn" value="53">9</td>
+                  <td class="pinScore" value="54">
+                    <div class="left">
+                      <p class="pin33">&#x25EF;</p>
+                      <p class="pin34">&#x25EF;</p>
+                    </div>
+                    <div class="right">
+                      <p class="pin35">&#x25EF;</p>
+                      <p class="pin36">&#x25EF;</p>
+                    </div>
+                  </td>
+                  <td class="grid" val3ue="55"></td>
+                  <td class="grid" value="56"></td>
+                  <td class="grid" value="57"></td>
+                  <td class="grid" value="58"></td>
+                </tr>
+                <tr value="10">
+                  <td class="turn" value="59">10</td>
+                  <td class="pinScore" value="60">
+                    <div class="left">
+                      <p class="pin37">&#x25EF;</p>
+                      <p class="pin38">&#x25EF;</p>
+                    </div>
+                    <div class="right">
+                      <p class="pin39">&#x25EF;</p>
+                      <p class="pin40">&#x25EF;</p>
+                    </div>
+                  </td>
+                  <td class="grid" value="61"></td>
+                  <td class="grid" value="62"></td>
+                  <td class="grid" value="63"></td>
+                  <td class="grid" value="64"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        </div>
+        <div class="colourLine">
+          <div class="colourCenter">
+            <p class="colour" value="65" id="red"></p>
+            <p class="colour" value="66" id="yellow"></p>
+            <p class="colour" value="67" id="green"></p>
+            <p class="colour" value="68" id="blue"></p>
+            <p class="colour" value="69" id="grey"></p>
+            <p class="colour" value="70" id="pink"></p>
+            <p class="colour" value="71" id="black"></p>
+            <p class="colour" value="72" id="orange"></p>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
